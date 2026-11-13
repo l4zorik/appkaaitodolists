@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "tudodo",
+    "slug": "tudodo",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a2e"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tudodo.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Allow FaceID to protect your tasks",
+        "UIBackgroundModes": ["fetch", "remote-notification"],
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "usesIcloudStorage": false,
+      "requiresFullScreen": true
+    },
+    "plugins": [
+      "expo-in-app-purchases"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "tudodo-project-id"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/tudodo-project-id"
+    }
+  }
+}
